@@ -44,7 +44,7 @@ class Config(object):
     PROTECT_CONTENT = getenv("PROTECT_CONTENT", "False") == "True"
     DISABLE_CHANNEL_BUTTON = getenv("DISABLE_CHANNEL_BUTTON", "False") == "True"
 
-    AUTO_DELETE_TIME = int(getenv("AUTO_DELETE_TIME", "0"))
+    AUTO_DELETE_TIME = int(getenv("AUTO_DELETE_TIME", "1200"))
     AUTO_DELETE_MSG = getenv("AUTO_DELETE_MSG", "This file will be automatically deleted in {time}.")
     AUTO_DEL_SUCCESS_MSG = getenv("AUTO_DEL_SUCCESS_MSG", "✅ File deleted successfully.")
 
